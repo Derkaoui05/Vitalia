@@ -58,12 +58,12 @@ export default function BookingForm() {
               <span className="italic font-normal">prochaine visite.</span>
             </h2>
             <p className="text-body text-charcoal-muted leading-relaxed font-light mb-8 max-w-md">
-              Remplissez ce formulaire et notre équipe administrative vous recontactera sous quelques heures pour convenir d'une date et confirmer votre rendez-vous.
+              Remplissez ce formulaire et notre équipe administrative vous recontactera sous quelques heures pour convenir d&apos;une date et confirmer votre rendez-vous.
             </p>
 
             <div className="space-y-4">
-              <p className="text-xs text-charcoal-muted uppercase tracking-[0.1em] font-semibold">
-                Besoin d'une réponse immédiate ?
+              <p className="text-xs text-charcoal-muted uppercase tracking-widest font-semibold">
+                Besoin d&apos;une réponse immédiate ?
               </p>
               <a
                 href="tel:+212660703051"
@@ -73,7 +73,7 @@ export default function BookingForm() {
                   <Phone className="w-4 h-4 stroke-[1.5]" />
                 </div>
                 <div>
-                  <div className="text-[10px] text-charcoal-muted uppercase tracking-[0.05em]">
+                  <div className="text-[10px] text-charcoal-muted uppercase tracking-wider">
                     Appelez-nous directement
                   </div>
                   <div className="text-sm font-semibold text-primary">
@@ -93,13 +93,13 @@ export default function BookingForm() {
                 className="flex flex-col items-center justify-center text-center py-12"
               >
                 <div className="w-14 h-14 bg-primary text-cream rounded-full flex items-center justify-center mb-6">
-                  <Check className="w-6 h-6 stroke-[2]" />
+                  <Check className="w-6 h-6 stroke-2" />
                 </div>
                 <h3 className="font-serif text-2xl text-primary mb-2">
                   Demande reçue
                 </h3>
                 <p className="text-sm text-charcoal-muted font-light max-w-sm">
-                  Merci pour votre confiance. Un conseiller du Centre Dentaire VITALIA vous appellera très rapidement pour convenir de l'heure exacte.
+                  Merci pour votre confiance. Un conseiller du Centre Dentaire VITALIA vous appellera très rapidement pour convenir de l&apos;heure exacte.
                 </p>
                 <button
                   onClick={() => setStatus("idle")}
@@ -113,7 +113,7 @@ export default function BookingForm() {
                 
                 {/* Name */}
                 <div>
-                  <label htmlFor="name" className="block text-xs font-semibold text-primary uppercase tracking-[0.05em] mb-2">
+                  <label htmlFor="name" className="block text-xs font-semibold text-primary uppercase tracking-wider mb-2">
                     Nom complet
                   </label>
                   <input
@@ -130,7 +130,7 @@ export default function BookingForm() {
 
                 {/* Phone */}
                 <div>
-                  <label htmlFor="phone" className="block text-xs font-semibold text-primary uppercase tracking-[0.05em] mb-2">
+                  <label htmlFor="phone" className="block text-xs font-semibold text-primary uppercase tracking-wider mb-2">
                     Numéro de téléphone
                   </label>
                   <input
@@ -147,7 +147,7 @@ export default function BookingForm() {
 
                 {/* Desired Care */}
                 <div>
-                  <label htmlFor="treatment" className="block text-xs font-semibold text-primary uppercase tracking-[0.05em] mb-2">
+                  <label htmlFor="treatment" className="block text-xs font-semibold text-primary uppercase tracking-wider mb-2">
                     Soin souhaité
                   </label>
                   <div className="relative">
@@ -176,7 +176,7 @@ export default function BookingForm() {
 
                 {/* Message */}
                 <div>
-                  <label htmlFor="message" className="block text-xs font-semibold text-primary uppercase tracking-[0.05em] mb-2">
+                  <label htmlFor="message" className="block text-xs font-semibold text-primary uppercase tracking-wider mb-2">
                     Informations complémentaires (Optionnel)
                   </label>
                   <textarea

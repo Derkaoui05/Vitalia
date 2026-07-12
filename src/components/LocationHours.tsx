@@ -6,9 +6,9 @@ export default function LocationHours() {
   return (
     <section id="contact" className="py-24 bg-cream-dark/20 border-fine-t border-fine-b">
       <div className="max-w-7xl mx-auto px-6">
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-          
+
           {/* Left Column: Details & Practical Info */}
           <div className="lg:col-span-5 flex flex-col justify-between space-y-12">
             <div>
@@ -25,14 +25,14 @@ export default function LocationHours() {
 
               {/* Direct Info List */}
               <div className="space-y-6">
-                
+
                 {/* Address */}
                 <div className="flex items-start gap-4">
                   <div className="p-2 border border-primary/5 bg-cream rounded-xs text-primary-light shrink-0 mt-0.5">
                     <MapPin className="w-4 h-4 stroke-[1.5]" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-semibold uppercase tracking-[0.1em] text-primary mb-1">
+                    <h4 className="text-xs font-semibold uppercase tracking-widest text-primary mb-1">
                       Adresse
                     </h4>
                     <p className="text-body-sm text-charcoal-muted font-light leading-relaxed">
@@ -48,8 +48,8 @@ export default function LocationHours() {
                     <Clock className="w-4 h-4 stroke-[1.5]" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-semibold uppercase tracking-[0.1em] text-primary mb-1">
-                      Horaires d'ouverture
+                    <h4 className="text-xs font-semibold uppercase tracking-widest text-primary mb-1">
+                      Horaires d&apos;ouverture
                     </h4>
                     <p className="text-body-sm text-charcoal-muted font-light leading-relaxed">
                       Ouvert 24h/24 & 7j/7 <br />
@@ -64,7 +64,7 @@ export default function LocationHours() {
                     <Phone className="w-4 h-4 stroke-[1.5]" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-semibold uppercase tracking-[0.1em] text-primary mb-1">
+                    <h4 className="text-xs font-semibold uppercase tracking-widest text-primary mb-1">
                       Téléphone Direct
                     </h4>
                     <a
@@ -84,11 +84,11 @@ export default function LocationHours() {
               <div className="flex items-start gap-3">
                 <span className="w-2 h-2 rounded-full bg-accent mt-1.5 animate-pulse"></span>
                 <div>
-                  <h5 className="text-xs font-bold text-primary uppercase tracking-[0.05em] mb-1">
+                  <h5 className="text-xs font-bold text-primary uppercase tracking-wider mb-1">
                     Urgences Dentaires
                   </h5>
                   <p className="text-xs text-charcoal-muted leading-relaxed font-light">
-                    En cas de traumatisme ou de douleur aiguë, contactez directement notre service d'urgence au <a href="tel:+212660703051" className="font-semibold text-charcoal underline">06 60 70 30 51</a> pour une prise en charge immédiate.
+                    En cas de traumatisme ou de douleur aiguë, contactez directement notre service d&apos;urgence au <a href="tel:+212660703051" className="font-semibold text-charcoal underline">06 60 70 30 51</a> pour une prise en charge immédiate.
                   </p>
                 </div>
               </div>
@@ -101,7 +101,7 @@ export default function LocationHours() {
             <div className="w-full h-full relative overflow-hidden rounded-xs min-h-[350px] lg:min-h-[450px]">
               {/* Overlay for premium look */}
               <div className="absolute inset-0 bg-primary/2 mix-blend-color pointer-events-none z-10" />
-              
+
               <iframe
                 title="Google Maps - Centre Dentaire Vitalia Tanger"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.6433284904037!2d-5.8058!3d35.7794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b802e3b2e75e1%3A0xc3f7a1f5!2sTanger!5e0!3m2!1sfr!2sma!4v1700000000000!5m2!1sfr!2sma"

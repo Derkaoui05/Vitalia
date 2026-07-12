@@ -23,13 +23,13 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-xs sm:text-sm text-charcoal-muted font-light leading-relaxed max-w-sm">
-              Espace moderne dédié à la santé et à l'esthétique du sourire à Tanger. Une équipe de praticiens qualifiés au service de votre bien-être bucco-dentaire.
+              Espace moderne dédié à la santé et à l&apos;esthétique du sourire à Tanger. Une équipe de praticiens qualifiés au service de votre bien-être bucco-dentaire.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="md:col-span-3 space-y-4">
-            <h4 className="text-xs font-semibold text-primary uppercase tracking-[0.1em]">
+            <h4 className="text-xs font-semibold text-primary uppercase tracking-widest">
               Navigation
             </h4>
             <ul className="space-y-2">
@@ -48,7 +48,7 @@ export default function Footer() {
 
           {/* Practical Info Summary */}
           <div className="md:col-span-4 space-y-4">
-            <h4 className="text-xs font-semibold text-primary uppercase tracking-[0.1em]">
+            <h4 className="text-xs font-semibold text-primary uppercase tracking-widest">
               Centre Vitalia Tanger
             </h4>
             <div className="space-y-2 text-xs sm:text-sm text-charcoal-muted font-light leading-relaxed">

@@ -18,7 +18,7 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="inline-flex items-center gap-2 mb-6"
           >
-            <span className="h-[1px] w-8 bg-primary/30"></span>
+            <span className="h-px w-8 bg-primary/30"></span>
             <span className="text-xs font-semibold tracking-[0.2em] text-primary uppercase">
               Tanger, Maroc
             </span>
@@ -30,7 +30,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="font-serif text-hero text-primary font-light leading-[1.1] mb-6 tracking-tight"
           >
-            L'excellence des soins <br className="hidden sm:inline" />
+            L&apos;excellence des soins <br className="hidden sm:inline" />
             <span className="italic font-normal">dans un havre de calme.</span>
           </motion.h1>
 
@@ -40,7 +40,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="text-body-lg text-charcoal-muted max-w-xl mb-10 leading-relaxed font-light"
           >
-            Le Centre Dentaire VITALIA à Tanger allie la haute expertise médicale à une approche profondément humaine. Nous réinventons votre parcours de soins dans un espace serein et moderne, dédié à la santé et à l'esthétique de votre sourire.
+            Le Centre Dentaire VITALIA à Tanger allie la haute expertise médicale à une approche profondément humaine. Nous réinventons votre parcours de soins dans un espace serein et moderne, dédié à la santé et à l&apos;esthétique de votre sourire.
           </motion.p>
 
           <motion.div
@@ -81,7 +81,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-cream/10 z-10 pointer-events-none" />
               
               <Image
-                src="/vitalia_interior.png"
+                src="/hero.webp"
                 alt="Intérieur moderne du Centre Dentaire Vitalia Tanger"
                 fill
                 priority
