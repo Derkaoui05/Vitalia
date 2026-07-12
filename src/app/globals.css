@@ -1,26 +1,87 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+
+  --color-primary: #2d3c33;
+  --color-primary-light: #435848;
+  --color-primary-dark: #1b2620;
+  
+  --color-accent: #c0826e;
+  --color-accent-hover: #b0725e;
+  
+  --color-sand: #d4cbb5;
+  --color-sand-light: #e6dfd3;
+  
+  --color-cream: #faf9f6;
+  --color-cream-dark: #f1efea;
+  
+  --color-charcoal: #1c201d;
+  --color-charcoal-muted: #555c57;
+  
+  --radius-xs: 0.125rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  
+  --animate-fade-in: fade-in 0.8s ease-out forwards;
+  --animate-slide-up: slide-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes slide-up {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
+:root {
+  background-color: #faf9f6;
+  color: #1c201d;
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  background-color: #faf9f6;
+  color: #1c201d;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom fine line border utility */
+.border-fine {
+  border: 1px solid rgba(45, 60, 51, 0.08);
+}
+
+.border-fine-t {
+  border-top: 1px solid rgba(45, 60, 51, 0.08);
+}
+
+.border-fine-b {
+  border-bottom: 1px solid rgba(45, 60, 51, 0.08);
+}
+
+.border-fine-r {
+  border-right: 1px solid rgba(45, 60, 51, 0.08);
+}
+
+.border-fine-l {
+  border-left: 1px solid rgba(45, 60, 51, 0.08);
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid #2d3c33;
+  outline-offset: 4px;
 }
