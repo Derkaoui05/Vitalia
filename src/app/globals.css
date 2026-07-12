@@ -14,8 +14,8 @@
   --color-sand: #d4cbb5;
   --color-sand-light: #e6dfd3;
   
-  --color-cream: #faf9f6;
-  --color-cream-dark: #f1efea;
+  --color-cream: #FCFAF7; /* White-creme background */
+  --color-cream-dark: #F4F1EA; /* Contrast creme element background */
   
   --color-charcoal: #1c201d;
   --color-charcoal-muted: #555c57;
@@ -27,6 +27,15 @@
   
   --animate-fade-in: fade-in 0.8s ease-out forwards;
   --animate-slide-up: slide-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  /* Premium Responsive Typography Scale using clamp() */
+  --text-hero: clamp(2.25rem, 6vw, 4rem);             /* Hero Title */
+  --text-section-title: clamp(1.75rem, 4vw, 2.75rem); /* Section Heading */
+  --text-card-title: clamp(1.2rem, 2vw, 1.4rem);      /* Card Heading */
+  --text-body-lg: clamp(1rem, 1.5vw, 1.125rem);       /* Hero Paragraph / Lead */
+  --text-body: clamp(0.875rem, 1.2vw, 1rem);          /* Standard Body Paragraph */
+  --text-body-sm: 0.8125rem;                          /* Small/Secondary Text (13px) */
+  --text-caption: 0.75rem;                            /* Captions/Labels (12px) */
 }
 
 @keyframes fade-in {
@@ -46,14 +55,14 @@
 }
 
 :root {
-  background-color: #faf9f6;
+  background-color: #FCFAF7;
   color: #1c201d;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--font-sans), system-ui, sans-serif;
-  background-color: #faf9f6;
+  background-color: #FCFAF7;
   color: #1c201d;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

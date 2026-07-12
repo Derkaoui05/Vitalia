@@ -28,7 +28,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="font-serif text-4xl sm:text-5xl md:text-6xl text-primary font-light leading-[1.1] mb-6 tracking-tight"
+            className="font-serif text-hero text-primary font-light leading-[1.1] mb-6 tracking-tight"
           >
             L'excellence des soins <br className="hidden sm:inline" />
             <span className="italic font-normal">dans un havre de calme.</span>
@@ -38,7 +38,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="text-base sm:text-lg text-charcoal-muted max-w-xl mb-10 leading-relaxed font-light"
+            className="text-body-lg text-charcoal-muted max-w-xl mb-10 leading-relaxed font-light"
           >
             Le Centre Dentaire VITALIA à Tanger allie la haute expertise médicale à une approche profondément humaine. Nous réinventons votre parcours de soins dans un espace serein et moderne, dédié à la santé et à l'esthétique de votre sourire.
           </motion.p>

@@ -70,7 +70,7 @@ export default function Services() {
             <span className="text-xs font-semibold tracking-[0.2em] text-accent uppercase block mb-3">
               Notre Expertise
             </span>
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-primary font-light tracking-tight">
+            <h2 className="font-serif text-section-title text-primary font-light tracking-tight">
               Des soins sur mesure, <br />
               <span className="italic">portés par une exigence d'excellence.</span>
             </h2>
@@ -118,10 +118,10 @@ export default function Services() {
                   </div>
 
                   {/* Content */}
-                  <h3 className={`font-serif text-xl font-light mb-3 tracking-wide ${titleColor}`}>
+                  <h3 className={`font-serif text-card-title font-light mb-3 tracking-wide ${titleColor}`}>
                     {service.title}
                   </h3>
-                  <p className={`text-sm leading-relaxed font-light ${descColor}`}>
+                  <p className={`text-body-sm leading-relaxed font-light ${descColor}`}>
                     {service.description}
                   </p>
                 </div>

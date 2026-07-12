@@ -43,11 +43,11 @@ export default function WhyVitalia() {
               <span className="text-xs font-semibold tracking-[0.2em] text-accent uppercase block mb-3">
                 Notre Philosophie
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-primary font-light tracking-tight leading-[1.1] mb-6">
+              <h2 className="font-serif text-section-title text-primary font-light tracking-tight leading-[1.1] mb-6">
                 Redéfinir le soin <br />
                 <span className="italic font-normal">par l'écoute et l'innovation.</span>
               </h2>
-              <p className="text-sm text-charcoal-muted leading-relaxed font-light max-w-md">
+              <p className="text-body text-charcoal-muted leading-relaxed font-light max-w-md">
                 Au Centre Dentaire VITALIA, nous croyons qu'un beau sourire naît d'une relation de confiance mutuelle et de soins d'une précision millimétrique. Notre espace tangérois a été pensé pour allier sérénité et exigence clinique.
               </p>
             </div>
@@ -74,11 +74,11 @@ export default function WhyVitalia() {
                   <span className="font-serif text-3xl text-accent/60 font-light block mb-4">
                     {point.num}
                   </span>
-                  <h3 className="font-serif text-lg font-light text-primary mb-3 tracking-wide">
+                  <h3 className="font-serif text-card-title font-light text-primary mb-3 tracking-wide">
                     {point.title}
                   </h3>
                 </div>
-                <p className="text-xs sm:text-sm text-charcoal-muted leading-relaxed font-light">
+                <p className="text-body-sm text-charcoal-muted leading-relaxed font-light">
                   {point.description}
                 </p>
               </motion.div>

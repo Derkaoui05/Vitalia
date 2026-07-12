@@ -53,11 +53,11 @@ export default function BookingForm() {
             <span className="text-xs font-semibold tracking-[0.2em] text-accent uppercase block mb-3">
               Consultation
             </span>
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-primary font-light tracking-tight leading-[1.1] mb-6">
+            <h2 className="font-serif text-section-title text-primary font-light tracking-tight leading-[1.1] mb-6">
               Planifier votre <br />
               <span className="italic font-normal">prochaine visite.</span>
             </h2>
-            <p className="text-sm text-charcoal-muted leading-relaxed font-light mb-8 max-w-md">
+            <p className="text-body text-charcoal-muted leading-relaxed font-light mb-8 max-w-md">
               Remplissez ce formulaire et notre équipe administrative vous recontactera sous quelques heures pour convenir d'une date et confirmer votre rendez-vous.
             </p>
 

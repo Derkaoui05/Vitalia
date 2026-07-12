@@ -15,11 +15,11 @@ export default function LocationHours() {
               <span className="text-xs font-semibold tracking-[0.2em] text-accent uppercase block mb-3">
                 Accès & Horaires
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-primary font-light tracking-tight leading-[1.1] mb-6">
+              <h2 className="font-serif text-section-title text-primary font-light tracking-tight leading-[1.1] mb-6">
                 Nous situer <br />
                 <span className="italic font-normal">et nous contacter.</span>
               </h2>
-              <p className="text-sm text-charcoal-muted leading-relaxed font-light mb-8">
+              <p className="text-body text-charcoal-muted leading-relaxed font-light mb-8">
                 Idéalement situé à Tanger, notre centre vous accueille sur rendez-vous ou en urgence médicale à toute heure.
               </p>
 
@@ -35,7 +35,7 @@ export default function LocationHours() {
                     <h4 className="text-xs font-semibold uppercase tracking-[0.1em] text-primary mb-1">
                       Adresse
                     </h4>
-                    <p className="text-sm text-charcoal-muted font-light leading-relaxed">
+                    <p className="text-body-sm text-charcoal-muted font-light leading-relaxed">
                       Immeuble n°8, 2 Route Rgaye <br />
                       Tanger 90000, Maroc
                     </p>
@@ -51,7 +51,7 @@ export default function LocationHours() {
                     <h4 className="text-xs font-semibold uppercase tracking-[0.1em] text-primary mb-1">
                       Horaires d'ouverture
                     </h4>
-                    <p className="text-sm text-charcoal-muted font-light leading-relaxed">
+                    <p className="text-body-sm text-charcoal-muted font-light leading-relaxed">
                       Ouvert 24h/24 & 7j/7 <br />
                       Service de garde permanent
                     </p>
