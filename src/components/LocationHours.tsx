@@ -9,7 +9,6 @@ export default function LocationHours() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
 
-          {/* Left Column: Details & Practical Info */}
           <div className="lg:col-span-5 flex flex-col justify-between space-y-12">
             <div>
               <span className="text-xs font-semibold tracking-[0.2em] text-accent uppercase block mb-3">
@@ -23,7 +22,6 @@ export default function LocationHours() {
                 Idéalement situé à Tanger, notre centre vous accueille sur rendez-vous ou en urgence médicale à toute heure.
               </p>
 
-              {/* Direct Info List */}
               <div className="space-y-6">
 
                 {/* Address */}
@@ -79,7 +77,6 @@ export default function LocationHours() {
               </div>
             </div>
 
-            {/* Emergency Alert Box */}
             <div className="p-6 bg-cream border border-accent/20 rounded-xs">
               <div className="flex items-start gap-3">
                 <span className="w-2 h-2 rounded-full bg-accent mt-1.5 animate-pulse"></span>
@@ -96,10 +93,8 @@ export default function LocationHours() {
 
           </div>
 
-          {/* Right Column: Google Maps Embed */}
           <div className="lg:col-span-7 relative min-h-[300px] lg:min-h-full w-full rounded-xs overflow-hidden border-fine p-2 bg-cream">
             <div className="w-full h-full relative overflow-hidden rounded-xs min-h-[350px] lg:min-h-[450px]">
-              {/* Overlay for premium look */}
               <div className="absolute inset-0 bg-primary/2 mix-blend-color pointer-events-none z-10" />
 
               <iframe
