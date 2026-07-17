@@ -72,7 +72,7 @@ export default function Services() {
             </span>
             <h2 className="font-serif text-section-title text-primary font-light tracking-tight">
               Des soins sur mesure, <br />
-              <span className="italic">portés par une exigence d'excellence.</span>
+              <span className="italic">portés par une exigence d&apos;excellence.</span>
             </h2>
           </div>
           <div className="md:col-span-4 md:text-right">

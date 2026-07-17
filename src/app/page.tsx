@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex-grow">
+      <main className="grow">
         <Hero />
         <Services />
         <WhyVitalia />

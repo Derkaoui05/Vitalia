@@ -9,10 +9,8 @@ export default function Footer() {
     <footer className="bg-cream-dark/50 border-fine-t pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-6">
         
-        {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
           
-          {/* Brand Info */}
           <div className="md:col-span-5 space-y-4">
             <Link href="#accueil" className="flex flex-col">
               <span className="font-serif text-2xl tracking-wider text-primary font-medium">
@@ -27,7 +25,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
           <div className="md:col-span-3 space-y-4">
             <h4 className="text-xs font-semibold text-primary uppercase tracking-widest">
               Navigation
@@ -46,7 +43,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Practical Info Summary */}
           <div className="md:col-span-4 space-y-4">
             <h4 className="text-xs font-semibold text-primary uppercase tracking-widest">
               Centre Vitalia Tanger
@@ -63,7 +59,6 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom Line */}
         <div className="border-t border-primary/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[11px] text-charcoal-muted font-light">
             &copy; {currentYear} Centre Dentaire VITALIA. Tous droits réservés.

@@ -36,7 +36,6 @@ export default function BookingForm() {
     e.preventDefault();
     setStatus("submitting");
 
-    // Simulate API call
     setTimeout(() => {
       setStatus("success");
       setFormData({ name: "", phone: "", treatment: "", message: "" });
@@ -48,7 +47,6 @@ export default function BookingForm() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Left Column: Direct Call & Intro */}
           <div className="lg:col-span-5 flex flex-col justify-center">
             <span className="text-xs font-semibold tracking-[0.2em] text-accent uppercase block mb-3">
               Consultation
@@ -84,7 +82,6 @@ export default function BookingForm() {
             </div>
           </div>
 
-          {/* Right Column: Interactive Booking Form */}
           <div className="lg:col-span-7 bg-cream-dark/30 border-fine p-8 sm:p-10 rounded-xs relative overflow-hidden">
             {status === "success" ? (
               <motion.div
@@ -111,7 +108,6 @@ export default function BookingForm() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 
-                {/* Name */}
                 <div>
                   <label htmlFor="name" className="block text-xs font-semibold text-primary uppercase tracking-wider mb-2">
                     Nom complet
@@ -128,7 +124,6 @@ export default function BookingForm() {
                   />
                 </div>
 
-                {/* Phone */}
                 <div>
                   <label htmlFor="phone" className="block text-xs font-semibold text-primary uppercase tracking-wider mb-2">
                     Numéro de téléphone
@@ -145,7 +140,6 @@ export default function BookingForm() {
                   />
                 </div>
 
-                {/* Desired Care */}
                 <div>
                   <label htmlFor="treatment" className="block text-xs font-semibold text-primary uppercase tracking-wider mb-2">
                     Soin souhaité
@@ -174,7 +168,6 @@ export default function BookingForm() {
                   </div>
                 </div>
 
-                {/* Message */}
                 <div>
                   <label htmlFor="message" className="block text-xs font-semibold text-primary uppercase tracking-wider mb-2">
                     Informations complémentaires (Optionnel)
@@ -190,7 +183,6 @@ export default function BookingForm() {
                   />
                 </div>
 
-                {/* Submit button */}
                 <button
                   type="submit"
                   disabled={status === "submitting"}

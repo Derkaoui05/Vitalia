@@ -36,7 +36,7 @@ export default function WhyVitalia() {
     <section id="a-propos" className="py-24 bg-cream">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
-          
+
           {/* Left Column: Philosophical Intro */}
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
@@ -45,10 +45,10 @@ export default function WhyVitalia() {
               </span>
               <h2 className="font-serif text-section-title text-primary font-light tracking-tight leading-[1.1] mb-6">
                 Redéfinir le soin <br />
-                <span className="italic font-normal">par l'écoute et l'innovation.</span>
+                <span className="italic font-normal">par l&apos;écoute et l&apos;innovation.</span>
               </h2>
               <p className="text-body text-charcoal-muted leading-relaxed font-light max-w-md">
-                Au Centre Dentaire VITALIA, nous croyons qu'un beau sourire naît d'une relation de confiance mutuelle et de soins d'une précision millimétrique. Notre espace tangérois a été pensé pour allier sérénité et exigence clinique.
+                Au Centre Dentaire VITALIA, nous croyons qu&apos;un beau sourire naît d&apos;une relation de confiance mutuelle et de soins d&apos;une précision millimétrique. Notre espace tangérois a été pensé pour allier sérénité et exigence clinique.
               </p>
             </div>
 
