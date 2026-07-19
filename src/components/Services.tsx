@@ -1,14 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ShieldCheck, Anchor, Compass, Gem, Sparkles, Layers, Clock, ArrowUpRight } from "lucide-react";
+import { ShieldCheck, Anchor, Compass, Gem, Sparkles, Layers, Clock, ArrowUpRight, LucideIcon } from "lucide-react";
 import Link from "next/link";
 
 interface Service {
   id: string;
   title: string;
   description: string;
-  icon: any;
+  icon: LucideIcon;
   featured?: boolean;
 }
 
