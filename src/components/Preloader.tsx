@@ -11,14 +11,6 @@ export default function Preloader({ onComplete }: PreloaderProps) {
   const [progress, setProgress] = useState(0);
   const [isDone, setIsDone] = useState(false);
 
-  // Lock body scroll while preloader is active
-  useEffect(() => {
-    document.body.classList.add("is-preloading");
-    return () => {
-      document.body.classList.remove("is-preloading");
-    };
-  }, []);
-
   // Counter logic (0 to 100)
   useEffect(() => {
     if (progress < 100) {

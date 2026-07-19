@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
@@ -18,6 +18,17 @@ const Preloader = dynamic(() => import("@/components/Preloader"), { ssr: false }
 
 export default function PageShell() {
   const [ready, setReady] = useState(false);
+
+  // Lock scroll until preloader completes — tied to ready, not to Preloader's lifecycle
+  useEffect(() => {
+    document.body.classList.add("is-preloading");
+  }, []);
+
+  useEffect(() => {
+    if (ready) {
+      document.body.classList.remove("is-preloading");
+    }
+  }, [ready]);
 
   const handlePreloaderComplete = useCallback(() => {
     setReady(true);
