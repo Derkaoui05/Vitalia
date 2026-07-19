@@ -94,3 +94,9 @@ body {
   outline: 2px solid #2d3c33;
   outline-offset: 4px;
 }
+
+/* Prevent scroll while preloader is active */
+body.is-preloading {
+  overflow: hidden;
+}
+
