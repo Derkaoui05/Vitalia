@@ -131,7 +131,7 @@ export default function Services() {
                     <span className="text-[10px] tracking-[0.2em] font-semibold text-accent uppercase">
                       Spécialité du centre
                     </span>
-                    <span className="h-[1px] flex-1 bg-cream/10"></span>
+                    <span className="h-px flex-1 bg-cream/10"></span>
                   </div>
                 )}
               </motion.div>
