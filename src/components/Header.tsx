@@ -5,6 +5,54 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
+function RollLink({ name, href }: { name: string; href: string }) {
+  const letters = name.split("");
+
+  return (
+    <Link href={href} passHref legacyBehavior>
+      <motion.a
+        initial="initial"
+        whileHover="hover"
+        className="relative text-sm font-medium tracking-wide text-charcoal py-0 cursor-pointer block overflow-hidden"
+      >
+        {/* Top layer (slides up and out) */}
+        <span className="block whitespace-nowrap">
+          {letters.map((letter, i) => (
+            <motion.span
+              key={i}
+              variants={{
+                initial: { y: 0 },
+                hover: { y: "-100%" },
+              }}
+              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1], delay: i * 0.02 }}
+              className="inline-block"
+            >
+              {letter === " " ? "\u00A0" : letter}
+            </motion.span>
+          ))}
+        </span>
+
+        {/* Bottom layer (rolls up and in) */}
+        <span className="absolute inset-0 block whitespace-nowrap">
+          {letters.map((letter, i) => (
+            <motion.span
+              key={i}
+              variants={{
+                initial: { y: "100%" },
+                hover: { y: 0 },
+              }}
+              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1], delay: i * 0.02 }}
+              className="inline-block text-accent"
+            >
+              {letter === " " ? "\u00A0" : letter}
+            </motion.span>
+          ))}
+        </span>
+      </motion.a>
+    </Link>
+  );
+}
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -29,15 +77,13 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-10">
+        <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
-            <Link
+            <RollLink
               key={link.name}
+              name={link.name}
               href={link.href}
-              className="text-sm font-medium tracking-wide text-charcoal hover:text-primary transition-colors duration-200"
-            >
-              {link.name}
-            </Link>
+            />
           ))}
         </nav>
 
