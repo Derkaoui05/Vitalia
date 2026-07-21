@@ -106,7 +106,6 @@ export default function LocationHours() {
                 allowFullScreen={false}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="grayscale opacity-85 contrast-[1.02] hover:grayscale-0 hover:opacity-100 transition-all duration-700"
               />
             </div>
           </div>
