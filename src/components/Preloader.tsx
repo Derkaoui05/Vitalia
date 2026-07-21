@@ -45,7 +45,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
             y: "-100%",
             transition: { duration: 1.0, ease: [0.85, 0, 0.15, 1] } 
           }}
-          className="fixed inset-0 z-[100] bg-primary flex flex-col justify-between p-8 sm:p-12 md:p-16 text-cream select-none overflow-hidden"
+          className="fixed inset-0 z-100 bg-primary flex flex-col justify-between p-8 sm:p-12 md:p-16 text-cream select-none overflow-hidden"
         >
           {/* Top row */}
           <div className="flex justify-between items-center w-full z-10">
@@ -105,7 +105,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
                   animate={{ y: "0%" }}
                   key={progress < 100 ? "status" : "welcome"}
                   transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                  className="block text-xs sm:text-sm tracking-[0.1em] font-light text-cream/70 uppercase"
+                  className="block text-xs sm:text-sm tracking-widest font-light text-cream/70 uppercase"
                 >
                   {progress < 100 ? "Veuillez patienter..." : "Bienvenue chez Vitalia"}
                 </motion.span>
@@ -130,12 +130,12 @@ export default function Preloader({ onComplete }: PreloaderProps) {
           />
           
           {/* Subtle grid lines matching aesthetic */}
-          <div className="absolute inset-x-0 top-1/4 h-[1px] bg-cream/3 opacity-30 pointer-events-none" />
-          <div className="absolute inset-x-0 top-2/4 h-[1px] bg-cream/3 opacity-30 pointer-events-none" />
-          <div className="absolute inset-x-0 top-3/4 h-[1px] bg-cream/3 opacity-30 pointer-events-none" />
-          <div className="absolute left-1/4 inset-y-0 w-[1px] bg-cream/3 opacity-30 pointer-events-none" />
-          <div className="absolute left-2/4 inset-y-0 w-[1px] bg-cream/3 opacity-30 pointer-events-none" />
-          <div className="absolute left-3/4 inset-y-0 w-[1px] bg-cream/3 opacity-30 pointer-events-none" />
+          <div className="absolute inset-x-0 top-1/4 h-px bg-cream/3 opacity-30 pointer-events-none" />
+          <div className="absolute inset-x-0 top-2/4 h-px bg-cream/3 opacity-30 pointer-events-none" />
+          <div className="absolute inset-x-0 top-3/4 h-px bg-cream/3 opacity-30 pointer-events-none" />
+          <div className="absolute left-1/4 inset-y-0 w-px bg-cream/3 opacity-30 pointer-events-none" />
+          <div className="absolute left-2/4 inset-y-0 w-px bg-cream/3 opacity-30 pointer-events-none" />
+          <div className="absolute left-3/4 inset-y-0 w-px bg-cream/3 opacity-30 pointer-events-none" />
         </motion.div>
       )}
     </AnimatePresence>
