@@ -68,7 +68,7 @@ export default function Hero() {
         </div>
 
         {/* Visual Asset (Asymmetric Right Column) */}
-        <div className="lg:col-span-5 relative w-full h-[320px] sm:h-[450px] lg:h-[550px] z-0">
+        <div className="lg:col-span-5 relative w-full h-80 sm:h-112.5 lg:h-137.5 z-0">
           <motion.div
             initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -86,7 +86,7 @@ export default function Hero() {
                 fill
                 priority
                 sizes="(max-w-7xl) 100vw, 50vw"
-                className="object-cover filter grayscale contrast-[1.02] opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-1000 ease-in-out"
+                className="object-cover"
               />
             </div>
             {/* Fine design lines representing asymmetry */}
